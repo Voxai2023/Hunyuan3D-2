@@ -267,7 +267,7 @@ class Hunyuan3DDiTPipeline:
             model_path = self.kwargs['from_pretrained_kwargs']['model_path']
             turbo_vae_mapping = {
                 'Hunyuan3D-2': ('tencent/Hunyuan3D-2', 'hunyuan3d-vae-v2-0-turbo'),
-                'Hunyuan3D-2mv': ('tencent/Hunyuan3D-2', 'hunyuan3d-vae-v2-0-turbo'),
+                'Hunyuan3D-2mv': ('/weights/Hunyuan3D-2mv', 'hunyuan3d-vae-v2-0-turbo'),
                 'Hunyuan3D-2mini': ('tencent/Hunyuan3D-2mini', 'hunyuan3d-vae-v2-mini-turbo'),
             }
             model_name = model_path.split('/')[-1]
@@ -288,7 +288,7 @@ class Hunyuan3DDiTPipeline:
             model_path = self.kwargs['from_pretrained_kwargs']['model_path']
             vae_mapping = {
                 'Hunyuan3D-2': ('tencent/Hunyuan3D-2', 'hunyuan3d-vae-v2-0'),
-                'Hunyuan3D-2mv': ('tencent/Hunyuan3D-2', 'hunyuan3d-vae-v2-0'),
+                'Hunyuan3D-2mv': ('/weights/Hunyuan3D-2mv', 'hunyuan3d-vae-v2-0'),
                 'Hunyuan3D-2mini': ('tencent/Hunyuan3D-2mini', 'hunyuan3d-vae-v2-mini'),
             }
             model_name = model_path.split('/')[-1]
